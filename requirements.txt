@@ -1,25 +1,2 @@
-name: Signal Alert Bot
-
-on:
-  schedule:
-    - cron: '*/5 * * * *'  # Runs every 5 minutes
-  workflow_dispatch:  # Allows manual execution
-
-jobs:
-  run-bot:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt  # This runs the dependencies from requirements.txt
-
-      - name: Run Signal Alert Bot
-        run: python Signal_Alert.py
+requests
+pandas
